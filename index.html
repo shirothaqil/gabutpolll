@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MR Haqil</div>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Halo, saya M.Shirothaqil Ilham Akbar</h1>
+            <p>Seorang siswa dari SMK krian 1 yang bersemangat dalam hal coding dan saya juga belajar hukum.</p>
+            <a href="#projects" class="btn">Lihat Proyek Saya</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/profile_picture.jpg" alt="Foto Profil">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>saya berumur 17TH dan saya tinggal di DS durung bedug RT 18 RW 04, Hobi saya bermain sepak bola   </p>
+        <p>Saya adalah seorang pengembang web full-stack dengan pengalaman 5 tahun dalam membangun aplikasi web yang responsif dan berkinerja tinggi. Saya memiliki keahlian dalam HTML, CSS, JavaScript, React, Node.js, dan database.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Proyek Saya</h2>
+        <div class="project-container">
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="assets/project1.png" alt="E-Learning Platform">
+                    <h3>E-Learning Platform</h3>
+                    <p>Platform pembelajaran online dengan fitur kursus, quiz, dan forum diskusi. Dikembangkan menggunakan PHP, MySQL, dan JavaScript.</p>
+                    <a href="project1.html" class="btn-small">Lihat Detail</a>
+                </div>
+                <div class="project-item hidden-project">
+                    <img src="assets/project2.jpg" alt="Mobile Task Manager">
+                    <h3>Mobile Task Manager</h3>
+                    <p>Aplikasi mobile untuk manajemen tugas dengan fitur reminder, kolaborasi tim, dan sinkronisasi cloud menggunakan React Native.</p>
+                    <a href="project2.html" class="btn-small">Lihat Detail</a>
+                </div>
+                <div class="project-item hidden-project">
+                    <img src="assets/project3.jpg" alt="E-Commerce Platform">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Platform jual-beli online lengkap dengan payment gateway, inventory management, dan admin dashboard menggunakan Laravel dan Vue.js.</p>
+                    <a href="project3.html" class="btn-small">Lihat Detail</a>
+                </div>
+                <div class="project-item hidden-project">
+                    <img src="assets/project4.png" alt="Web Development Tools">
+                    <h3>Web Development Tools</h3>
+                    <p>Kumpulan tools untuk developer termasuk code generator, CSS tools, dan performance analyzer menggunakan React dan Node.js.</p>
+                    <a href="project4.html" class="btn-small">Lihat Detail</a>
+                </div>
+                <div class="project-item hidden-project">
+                    <img src="assets/project5.jpg" alt="Portfolio Website Collection">
+                    <h3>Portfolio Website Collection</h3>
+                    <p>Koleksi website portfolio untuk berbagai klien dengan desain yang unik dan disesuaikan kebutuhan masing-masing.</p>
+                    <a href="project5.html" class="btn-small">Lihat Detail</a>
+                </div>
+            </div>
+            <button id="show-more-btn" class="btn">Tampilkan Lebih Banyak Proyek</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Hubungi Saya</h2>
+        <p>Anda dapat menghubungi saya melalui email atau media sosial.</p>
+        <form>
+            <input type="text" placeholder="Nama Anda">
+            <input type="email" placeholder="Email Anda">
+            <textarea placeholder="Pesan Anda"></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MR Haqil. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Tools - MR Haqil</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            background: #ecf0f1;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        .content-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .content-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .tech-tag {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #95a5a6;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .back-btn:hover {
+            background: #7f8c8d;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+            .project-header h1 {
+                font-size: 2rem;
+            }
+            .project-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MR Haqil</div>
+            <ul>
+                <li><a href="index.html#home">Beranda</a></li>
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#projects">Proyek</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="project-detail">
+        <a href="index.html#projects" class="back-btn">← Kembali ke Proyek</a>
+        
+        <div class="project-header">
+            <h1>Web Development Tools</h1>
+            <div class="project-meta">
+                <span class="meta-item">Developer Tools</span>
+                <span class="meta-item">2024</span>
+                <span class="meta-item">Open Source</span>
+            </div>
+        </div>
+
+        <div class="project-image">
+            <img src="assets/project4.png" alt="Web Development Tools Screenshot">
+        </div>
+
+        <div class="project-content">
+            <div class="content-section">
+                <h2>Deskripsi Proyek</h2>
+                <p>Web Development Tools adalah kumpulan tools dan utilities yang saya kembangkan untuk membantu developer dalam proses pengembangan web. Tools ini mencakup berbagai aspek dari development workflow mulai dari code generation hingga testing automation.</p>
+                
+                <p>Proyek ini lahir dari kebutuhan pribadi untuk mengotomatisasi tugas-tugas repetitif dalam development dan kemudian saya kembangkan menjadi tools yang dapat digunakan oleh developer lain.</p>
+
+                <h2>Tools yang Tersedia</h2>
+                <ul>
+                    <li>Code Generator untuk HTML, CSS, dan JavaScript boilerplate</li>
+                    <li>CSS Grid dan Flexbox Generator</li>
+                    <li>Color Palette Generator dengan export ke berbagai format</li>
+                    <li>Responsive Breakpoint Tester</li>
+                    <li>Performance Analyzer untuk website</li>
+                    <li>SEO Meta Tag Generator</li>
+                    <li>Image Optimizer dan Converter</li>
+                    <li>API Testing Tool dengan collection management</li>
+                </ul>
+
+                <h2>Tantangan & Solusi</h2>
+                <p>Tantangan utama adalah membuat tools yang user-friendly namun tetap powerful. Saya fokus pada UX design yang intuitif dan menyediakan dokumentasi yang lengkap untuk setiap tool.</p>
+                
+                <p>Untuk performa, saya mengimplementasikan lazy loading dan code splitting sehingga hanya tools yang digunakan yang akan di-load.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Teknologi</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Jest</span>
+                </div>
+
+                <h2>Durasi</h2>
+                <p>5 bulan (April - Agustus 2024)</p>
+
+                <h2>Tim</h2>
+                <p>Solo Project</p>
+
+                <h2>Status</h2>
+                <p>Active Development</p>
+
+                <h2>Usage Stats</h2>
+                <p>1000+ monthly users<br>
+                5000+ tools generated<br>
+                50+ GitHub stars</p>
+
+                <h2>Link</h2>
+                <a href="#" class="btn-small" style="display: inline-block; margin-top: 1rem;">Live Tools</a>
+                <a href="#" class="btn-small" style="display: inline-block; margin-top: 1rem;">GitHub</a>
+                <a href="#" class="btn-small" style="display: inline-block; margin-top: 1rem;">Documentation</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MR Haqil. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

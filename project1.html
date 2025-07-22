@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform - MR Haqil</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            background: #ecf0f1;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        .content-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .content-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .tech-tag {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #95a5a6;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .back-btn:hover {
+            background: #7f8c8d;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+            .project-header h1 {
+                font-size: 2rem;
+            }
+            .project-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MR Haqil</div>
+            <ul>
+                <li><a href="index.html#home">Beranda</a></li>
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#projects">Proyek</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="project-detail">
+        <a href="index.html#projects" class="back-btn">← Kembali ke Proyek</a>
+        
+        <div class="project-header">
+            <h1>E-Learning Platform</h1>
+            <div class="project-meta">
+                <span class="meta-item">Web Development</span>
+                <span class="meta-item">2024</span>
+                <span class="meta-item">Full Stack</span>
+            </div>
+        </div>
+
+        <div class="project-image">
+            <img src="assets/project1.png" alt="E-Learning Platform Screenshot">
+        </div>
+
+        <div class="project-content">
+            <div class="content-section">
+                <h2>Deskripsi Proyek</h2>
+                <p>E-Learning Platform adalah aplikasi web yang saya kembangkan untuk memfasilitasi pembelajaran online. Platform ini memungkinkan siswa untuk mengakses materi pembelajaran, mengikuti kuis, dan berinteraksi dengan instruktur secara real-time.</p>
+                
+                <p>Proyek ini dikembangkan sebagai bagian dari tugas akhir di SMK Krian 1, dengan fokus pada pengalaman pengguna yang intuitif dan fitur-fitur pembelajaran yang komprehensif.</p>
+
+                <h2>Fitur Utama</h2>
+                <ul>
+                    <li>Dashboard siswa dan instruktur yang terpisah</li>
+                    <li>Sistem manajemen kursus dan materi</li>
+                    <li>Quiz dan assessment online</li>
+                    <li>Forum diskusi untuk setiap kursus</li>
+                    <li>Progress tracking untuk siswa</li>
+                    <li>Notifikasi real-time</li>
+                    <li>Responsive design untuk semua perangkat</li>
+                </ul>
+
+                <h2>Tantangan & Solusi</h2>
+                <p>Tantangan terbesar dalam proyek ini adalah mengimplementasikan sistem real-time untuk notifikasi dan chat. Saya mengatasi ini dengan menggunakan WebSocket untuk komunikasi real-time dan mengoptimalkan database queries untuk performa yang lebih baik.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Teknologi</h2>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">jQuery</span>
+                </div>
+
+                <h2>Durasi</h2>
+                <p>3 bulan (Januari - Maret 2024)</p>
+
+                <h2>Tim</h2>
+                <p>Solo Project</p>
+
+                <h2>Status</h2>
+                <p>Completed & Deployed</p>
+
+                <h2>Link</h2>
+                <a href="#" class="btn-small" style="display: inline-block; margin-top: 1rem;">Demo Live</a>
+                <a href="#" class="btn-small" style="display: inline-block; margin-top: 1rem;">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MR Haqil. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
